@@ -8,6 +8,7 @@ public class Player extends GameObject {
 
     Random r = new Random();
     Handler handler;
+    Image playerImg = ImageLoader.loadImage("Player.png");
 
     public Player(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -46,7 +47,7 @@ public class Player extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(ImageLoader.loadImage("Player.png"), (int)x, (int)y, 55, 45, null);
+        g.drawImage(playerImg, (int)x, (int)y, 55, 55, null);
     }
 
 

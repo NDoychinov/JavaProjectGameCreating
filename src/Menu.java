@@ -1,5 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
