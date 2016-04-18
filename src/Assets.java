@@ -17,7 +17,7 @@ public class Assets {
     public static BufferedImage play;
 
     public static void init(){
-        background = ImageLoader.loadImage("/background.jpg");
+        background = ImageLoader.loadImage("/animatedSpace8x6.jpg");
         player = ImageLoader.loadImage("/Player.png");
       //  logo = ImageLoader.loadImage("/GameLogo.png");
         asteroid = ImageLoader.loadImage("/Asteroids/Brown.png");
