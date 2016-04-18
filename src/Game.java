@@ -135,9 +135,7 @@ public class Game extends Canvas implements Runnable {
         }
         Graphics g = bs.getDrawGraphics();
 
-        g.setColor(Color.black);
-        g.fillRect(0, 0, WIDTH, HEIGHT);
-
+        g.drawImage(ImageLoader.loadImage("background.jpg"),0, 0, WIDTH, HEIGHT, null);
 
         handler.render(g);
 

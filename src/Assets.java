@@ -10,7 +10,7 @@ public class Assets {
 
     public static void init(){
         background = ImageLoader.loadImage("/background.jpg");
-        player = ImageLoader.loadImage("/alien.png");
+        player = ImageLoader.loadImage("/Player.png");
       //  logo = ImageLoader.loadImage("/GameLogo.png");
       //  asteroid = ImageLoader.loadImage("/Asteroids/Brown.png");
       //  blackhole = ImageLoader.loadImage("/blackhole.png");
