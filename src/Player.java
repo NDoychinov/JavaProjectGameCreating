@@ -20,8 +20,8 @@ public class Player extends GameObject {
         x += velX;
         y += velY;
 
-        x = Game.clamp(x, 0, Game.WIDTH - 60);
-        y = Game.clamp(y, 0, Game.HEIGHT - 72);
+        x = Game.clamp(x, 0, Game.WIDTH - 65);
+        y = Game.clamp(y, -10, Game.HEIGHT - 83);
 
         collision();
     }

@@ -18,10 +18,10 @@ public class Assets {
     public static BufferedImage asteroidTwo;
     public static BufferedImage theBoss;
 
-    public static void init(){
+    public static void init() {
         background = ImageLoader.loadImage("/background.jpg");
         player = ImageLoader.loadImage("/Player.png");
-      //  logo = ImageLoader.loadImage("/GameLogo.png");
+        logo = ImageLoader.loadImage("/logo.png");
         asteroid = ImageLoader.loadImage("/Brown.png");
         asteroidOne = ImageLoader.loadImage("/Grey_1.png");
         blackhole = ImageLoader.loadImage("/blackhole.png");
@@ -34,7 +34,6 @@ public class Assets {
         tryAgain = ImageLoader.loadImage("/TryAgainButton.png");
         asteroidTwo = ImageLoader.loadImage("/Brown.png");
         theBoss = ImageLoader.loadImage("/TheBoss.png");
-
 
 
     }

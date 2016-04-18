@@ -6,7 +6,8 @@ public class MenuParticle extends GameObject {
 
     Random r = new Random();
 
-    private Color color;
+    private Image[] imgs = {Assets.blackhole, Assets.theBoss, Assets.asteroid, Assets.asteroidOne, Assets.asteroidTwo};
+    private Image rnd;
 
     public MenuParticle(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -17,7 +18,8 @@ public class MenuParticle extends GameObject {
         if (velX == 0) velX = 1;
         if (velY == 0) velY = 1;
 
-        color = new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255));
+        rnd = imgs[r.nextInt(5)];
+
     }
 
     public Rectangle getBounds() {
@@ -28,13 +30,12 @@ public class MenuParticle extends GameObject {
         x += velX;
         y += velY;
 
-        if (y <= 0 || y >= Game.HEIGHT - 50) velY *= -1;
-        if (x <= 0 || x >= Game.WIDTH - 26) velX *= -1;
+        if (y <= 0 || y >= Game.HEIGHT - 55) velY *= -1;
+        if (x <= 0 || x >= Game.WIDTH - 35) velX *= -1;
 
-        handler.addObject(new Trail(x, y, ID.Trail, Assets.asteroid, 32, 32, 0.02f, handler));
+        handler.addObject(new Trail(x, y, ID.Trail, rnd, 32, 32, 0.02f, handler));
     }
 
     public void render(Graphics g) {
-
     }
 }
