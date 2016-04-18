@@ -110,7 +110,7 @@ public class Menu extends MouseAdapter {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
 
-            g.drawImage(Assets.logo, 165, -90, 280, 280, null);
+            g.drawImage(Assets.logo, 160, -90, 300, 280, null);
 
             g.drawImage(Assets.play, 210, 150, 200, 64, null);
 
@@ -118,15 +118,24 @@ public class Menu extends MouseAdapter {
 
             g.drawImage(Assets.quit, 210, 350, 200, 64, null);
         } else if (game.gameState == Game.STATE.Credentials) {
+            String krum = "Krum Krumov";
+            String nikolay = "Nikolay Doychinov";
+            String stoyan = "Stoyan Angelov";
+            String todor = "Todor Yordanov";
+
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
+            Font fnt3 = new Font("arial", 1, 20);
 
             g.setFont(fnt);
             g.setColor(Color.white);
-            g.drawString("Credentials", 180, 70);
+            g.drawString("Team \"Jakarta\" are:", 90, 70);
 
-            g.setFont(fnt2);
-            g.drawString("Created by Team Jakarta", 120, 200);
+            g.setFont(fnt3);
+            g.drawString(krum, 250, 150);
+            g.drawString(nikolay, 230, 200);
+            g.drawString(stoyan, 240, 250);
+            g.drawString(todor, 240, 300);
 
             g.drawImage(Assets.back, 210, 350, 200, 64, null);
 
