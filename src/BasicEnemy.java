@@ -20,14 +20,15 @@ public class BasicEnemy extends GameObject {
         x += velX;
         y += velY;
 
-        if (y <= 0 || y >= Game.HEIGHT - 32) velY *= -1;
-        if (x <= 0 || x >= Game.WIDTH - 16) velX *= -1;
+        if (y <= 0 || y >= Game.HEIGHT - 50) velY *= -1;
+        if (x <= 0 || x >= Game.WIDTH - 26) velX *= -1;
 
-        handler.addObject(new Trail(x, y, ID.Trail, Color.red, 16, 16, 0.02f, handler));
+        handler.addObject(new Trail(x, y, ID.Trail, Assets.asteroid, 26, 26, 0.05f, handler));
     }
 
     public void render(Graphics g) {
-        g.setColor(Color.red);
-        g.fillRect((int)x, (int)y, 16, 16);
+        /*g.setColor(Color.red);
+        g.fillRect((int)x, (int)y, 16, 16);*/
+     //   g.drawImage(Assets.asteroid,(int)x, (int)y, 54, 54, null);
     }
 }

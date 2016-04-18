@@ -36,6 +36,7 @@ public class Game extends Canvas implements Runnable {
         menu = new Menu(this, handler, hud);
         this.addKeyListener(new KeyInput(handler, this));
         this.addMouseListener(menu);
+        Assets.init();
 
         new Window(WIDTH, HEIGHT, "JavaGame", this);
 
@@ -135,7 +136,7 @@ public class Game extends Canvas implements Runnable {
         }
         Graphics g = bs.getDrawGraphics();
 
-        g.drawImage(ImageLoader.loadImage("background.jpg"),0, 0, WIDTH, HEIGHT, null);
+        g.drawImage(Assets.background,0, 0, WIDTH, HEIGHT, null);
 
         handler.render(g);
 

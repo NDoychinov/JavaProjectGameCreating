@@ -114,11 +114,11 @@ public class Menu extends MouseAdapter {
             g.setColor(Color.white);
             g.drawString("Menu", 240, 70);
 
-            g.drawImage(ImageLoader.loadImage("PlayButton.png"), 210, 150, 200, 64, null);
+            g.drawImage(Assets.play, 210, 150, 200, 64, null);
 
-            g.drawImage(ImageLoader.loadImage("CredButton.png"), 210, 250, 200, 64, null);
+            g.drawImage(Assets.cred, 210, 250, 200, 64, null);
 
-            g.drawImage(ImageLoader.loadImage("QuitButton.png"), 210, 350, 200, 64, null);
+            g.drawImage(Assets.quit, 210, 350, 200, 64, null);
         } else if (game.gameState == Game.STATE.Credentials) {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
@@ -130,7 +130,8 @@ public class Menu extends MouseAdapter {
             g.setFont(fnt2);
             g.drawString("Created by Team Jakarta", 120, 200);
 
-            g.drawImage(ImageLoader.loadImage("BackButton.png"), 210, 350, 200, 64, null);
+            g.drawImage(Assets.back, 210, 350, 200, 64, null);
+
         } else if (game.gameState == Game.STATE.End) {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
@@ -143,7 +144,8 @@ public class Menu extends MouseAdapter {
             g.setFont(fnt3);
             g.drawString("You lost with a score of: " + hud.getScore(), 175, 200);
 
-            g.drawImage(ImageLoader.loadImage("TryAgainButton.png"), 210, 350, 200, 64, null);
+            g.drawImage(Assets.tryAgain, 210, 350, 200, 64, null);
+
         } else if (game.gameState == Game.STATE.Select) {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
@@ -152,11 +154,11 @@ public class Menu extends MouseAdapter {
             g.setColor(Color.white);
             g.drawString("SELECT DIFFICULTY", 75, 70);
 
-            g.drawImage(ImageLoader.loadImage("NormalButton.png"), 210, 150, 200, 64, null);
+            g.drawImage(Assets.normal, 210, 150, 200, 64, null);
 
-            g.drawImage(ImageLoader.loadImage("HardButton.png"), 210, 250, 200, 64, null);
+            g.drawImage(Assets.hard, 210, 250, 200, 64, null);
 
-            g.drawImage(ImageLoader.loadImage("BackButton.png"), 210, 350, 200, 64, null);
+            g.drawImage(Assets.back, 210, 350, 200, 64, null);
         }
     }
 }

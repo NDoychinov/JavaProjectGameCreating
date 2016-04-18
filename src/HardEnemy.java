@@ -37,7 +37,7 @@ public class HardEnemy extends GameObject {
             }
         }
 
-        handler.addObject(new Trail(x, y, ID.Trail, Color.yellow, 16, 16, 0.02f, handler));
+        handler.addObject(new Trail(x, y, ID.Trail, Assets.asteroid, 16, 16, 0.02f, handler));
     }
 
     public void render(Graphics g) {

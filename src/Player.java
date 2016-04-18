@@ -44,7 +44,7 @@ public class Player extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(playerImg, (int)x, (int)y, 55, 55, null);
+        g.drawImage(Assets.player, (int)x, (int)y, 64, 64, null);
     }
 
 
