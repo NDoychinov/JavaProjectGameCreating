@@ -26,21 +26,21 @@ public class Spawn {
                 if (hud.getLevel() == 1){
                     handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
                 }else if (hud.getLevel() == 2){
-                    handler.addObject(new HardEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
+                    handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
                 }else if (hud.getLevel() == 5){
                     handler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler));
                 }else if (hud.getLevel() == 8){
                     handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
-                }else if(hud.getLevel() == 10){
+                }else if(hud.getLevel() % 10 == 0){
                     handler.clearEnemys();
                     handler.addObject(new BossEnemy((Game.WIDTH / 2) - 48, -170, ID.BossEnemy, handler));
-                } else if(hud.getLevel() == 15){
+                } else if(hud.getLevel() >= 15 && hud.getLevel() % 10 == 5){
                     handler.clearEnemys();
                     handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
                     handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
-                } else if(hud.getLevel() == 17){
+                } else if(hud.getLevel() >= 17 && hud.getLevel() % 10 == 7){
                     handler.addObject(new FastEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
-                } else if(hud.getLevel() == 18){
+                } else if(hud.getLevel() >= 18 && hud.getLevel() % 10 == 8){
                     handler.addObject(new FastEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
                 }
             } else if (game.diff == 1) {
