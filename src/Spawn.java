@@ -1,8 +1,5 @@
 import java.util.Random;
 
-/**
- * Created by Niki on 5.4.2016 г..
- */
 public class Spawn {
 
     private Handler handler;

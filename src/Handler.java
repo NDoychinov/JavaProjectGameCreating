@@ -1,9 +1,6 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-/**
- * Created by Niki on 5.4.2016 г..
- */
 public class Handler {
     ArrayList<GameObject> object = new ArrayList<>();
 

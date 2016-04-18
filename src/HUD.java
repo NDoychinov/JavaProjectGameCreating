@@ -1,8 +1,5 @@
 import java.awt.*;
 
-/**
- * Created by Niki on 5.4.2016 г..
- */
 public class HUD {
 
     public static float HEALTH = 100;

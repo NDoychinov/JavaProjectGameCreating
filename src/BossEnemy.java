@@ -1,9 +1,6 @@
 import java.awt.*;
 import java.util.Random;
 
-/**
- * Created by Niki on 5.4.2016 г..
- */
 public class BossEnemy extends GameObject {
 
     private Handler handler;

@@ -1,9 +1,6 @@
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-/**
- * Created by Niki on 5.4.2016 г..
- */
 public class KeyInput extends KeyAdapter {
 
     private Handler handler;

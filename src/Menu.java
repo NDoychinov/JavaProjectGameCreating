@@ -3,9 +3,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Random;
 
-/**
- * Created by Niki on 6.4.2016 г..
- */
 public class Menu extends MouseAdapter {
 
     private Game game;
