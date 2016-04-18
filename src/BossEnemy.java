@@ -55,7 +55,6 @@ public class BossEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-
         g.drawImage(Assets.theBoss,(int)x, (int)y, 150, 150, null);
     }
 }

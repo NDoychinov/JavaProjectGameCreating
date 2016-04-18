@@ -6,7 +6,7 @@ public class MenuParticle extends GameObject {
 
     Random r = new Random();
 
-    private Image[] imgs = {Assets.blackhole, Assets.theBoss, Assets.asteroid, Assets.asteroidOne, Assets.asteroidTwo};
+    private Image[] imgs = {Assets.blackhole, Assets.theBoss, Assets.asteroid, Assets.asteroidOne};
     private Image rnd;
 
     public MenuParticle(int x, int y, ID id, Handler handler) {
@@ -18,7 +18,7 @@ public class MenuParticle extends GameObject {
         if (velX == 0) velX = 1;
         if (velY == 0) velY = 1;
 
-        rnd = imgs[r.nextInt(5)];
+        rnd = imgs[r.nextInt(4)];
 
     }
 

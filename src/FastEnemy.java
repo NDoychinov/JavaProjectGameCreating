@@ -26,7 +26,6 @@ public class FastEnemy extends GameObject {
     }
 
     public void render(Graphics g) {
-      //  g.setColor(Color.cyan);
-      //  g.fillRect((int)x, (int)y, 16, 16);
+
     }
 }

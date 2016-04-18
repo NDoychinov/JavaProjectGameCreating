@@ -38,7 +38,7 @@ public class Game extends Canvas implements Runnable {
         this.addMouseListener(menu);
         Assets.init();
 
-        new Window(WIDTH, HEIGHT, "JavaGame", this);
+        new Window(WIDTH, HEIGHT, "Space Escape", this);
 
         spawner = new Spawn(handler, hud, this);
         r = new Random();
