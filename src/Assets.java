@@ -14,8 +14,6 @@ public class Assets {
       //  logo = ImageLoader.loadImage("/GameLogo.png");
       //  asteroid = ImageLoader.loadImage("/Asteroids/Brown.png");
       //  blackhole = ImageLoader.loadImage("/blackhole.png");
-        // Hello
-        // yo
 
     }
 
