@@ -20,16 +20,16 @@ public class Assets {
         background = ImageLoader.loadImage("/animatedSpace8x6.jpg");
         player = ImageLoader.loadImage("/Player.png");
       //  logo = ImageLoader.loadImage("/GameLogo.png");
-        asteroid = ImageLoader.loadImage("/Asteroids/Brown.png");
-        asteroidOne = ImageLoader.loadImage("/Asteroids/Grey_1.png");
+        asteroid = ImageLoader.loadImage("/Brown.png");
+        asteroidOne = ImageLoader.loadImage("/Grey_1.png");
         blackhole = ImageLoader.loadImage("/blackhole.png");
-        back = ImageLoader.loadImage("/buttons/BackButton.png");
-        cred = ImageLoader.loadImage("/buttons/CredButton.png");
-        hard = ImageLoader.loadImage("/buttons/HardButton.png");
-        normal = ImageLoader.loadImage("/buttons/NormalButton.png");
-        play = ImageLoader.loadImage("/buttons/PlayButton.png");
-        quit = ImageLoader.loadImage("/buttons/QuitButton.png");
-        tryAgain = ImageLoader.loadImage("/buttons/TryAgainButton.png");
+        back = ImageLoader.loadImage("/BackButton.png");
+        cred = ImageLoader.loadImage("/CredButton.png");
+        hard = ImageLoader.loadImage("/HardButton.png");
+        normal = ImageLoader.loadImage("/NormalButton.png");
+        play = ImageLoader.loadImage("/PlayButton.png");
+        quit = ImageLoader.loadImage("/QuitButton.png");
+        tryAgain = ImageLoader.loadImage("/TryAgainButton.png");
 
 
 
