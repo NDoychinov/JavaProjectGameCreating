@@ -7,6 +7,7 @@
     <JAVADOC />
     <NATIVE>
       <root url="file://$PROJECT_DIR$/libs" />
+      <root url="file://$PROJECT_DIR$/libs2" />
     </NATIVE>
     <SOURCES />
     <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
