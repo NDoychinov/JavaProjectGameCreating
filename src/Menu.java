@@ -116,7 +116,7 @@ public class Menu extends MouseAdapter {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
 
-            g.drawImage(Assets.logo, 160, -90, 300, 280, null);
+            g.drawImage(Assets.logo, 120, -90, 380, 280, null);
 
             g.drawImage(Assets.play, 210, 150, 200, 64, null);
 
