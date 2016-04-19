@@ -2,9 +2,13 @@
   <library name="resources">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/resources" />
-      <root url="jar://$USER_HOME$/Desktop/Libs/jars/lwjgl.jar!/" />
+      <root url="file://$PROJECT_DIR$/libs" />
     </CLASSES>
     <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/libs" />
+    </NATIVE>
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
   </library>
 </component>
