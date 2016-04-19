@@ -38,6 +38,8 @@ public class Game extends Canvas implements Runnable {
         this.addMouseListener(menu);
         Assets.init();
 
+        AudioPlayer.init();
+
         new Window(WIDTH, HEIGHT, "Space Escape", this);
 
         spawner = new Spawn(handler, hud, this);

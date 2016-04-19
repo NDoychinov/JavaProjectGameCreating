@@ -2,6 +2,7 @@
   <library name="resources">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/resources" />
+      <root url="jar://$USER_HOME$/Desktop/Libs/jars/lwjgl.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -23,6 +23,7 @@ public class Menu extends MouseAdapter {
         if (game.gameState == Game.STATE.Menu) {
             //Play Button
             if (mouseOver(mx, my, 210, 150, 200, 64)) {
+                AudioPlayer.getSound("menu_sound").play();
                 game.gameState = Game.STATE.Select;
                 return;
             }
@@ -30,6 +31,8 @@ public class Menu extends MouseAdapter {
             //Credentials Button
             if (mouseOver(mx, my, 210, 250, 200, 64)) {
                 game.gameState = Game.STATE.Credentials;
+                AudioPlayer.getSound("menu_sound").play();
+
             }
 
             //Quit Button
@@ -45,7 +48,7 @@ public class Menu extends MouseAdapter {
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
                 handler.clearEnemys();
                 handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
-
+                AudioPlayer.getSound("menu_sound").play();
                 game.diff = 0;
             }
 
@@ -55,6 +58,7 @@ public class Menu extends MouseAdapter {
                 handler.addObject(new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler));
                 handler.clearEnemys();
                 handler.addObject(new FastEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
+                AudioPlayer.getSound("menu_sound").play();
 
                 game.diff = 1;
             }
@@ -62,6 +66,7 @@ public class Menu extends MouseAdapter {
             //Back Button
             if (mouseOver(mx, my, 210, 350, 200, 64)) {
                 game.gameState = Game.STATE.Menu;
+                AudioPlayer.getSound("menu_sound").play();
                 return;
             }
         }
@@ -70,6 +75,7 @@ public class Menu extends MouseAdapter {
         if (game.gameState == Game.STATE.Credentials) {
             if (mouseOver(mx, my, 210, 350, 200, 64)) {
                 game.gameState = Game.STATE.Menu;
+                AudioPlayer.getSound("menu_sound").play();
                 return;
             }
         }
