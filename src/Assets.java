@@ -16,22 +16,24 @@ public class Assets {
     public static BufferedImage tryAgain;
     public static BufferedImage play;
     public static BufferedImage theBoss;
+    public static BufferedImage asteroidGreen;
 
     public static void init() {
         background = ImageLoader.loadImage("/background.jpg");
         player = ImageLoader.loadImage("/Player.png");
         logo = ImageLoader.loadImage("/logo.png");
-        asteroid = ImageLoader.loadImage("/Brown.png");
-        asteroidOne = ImageLoader.loadImage("/Grey_1.png");
-        blackhole = ImageLoader.loadImage("/blackhole.png");
-        back = ImageLoader.loadImage("/BackButton.png");
-        cred = ImageLoader.loadImage("/CredButton.png");
-        hard = ImageLoader.loadImage("/HardButton.png");
-        normal = ImageLoader.loadImage("/NormalButton.png");
-        play = ImageLoader.loadImage("/PlayButton.png");
-        quit = ImageLoader.loadImage("/QuitButton.png");
-        tryAgain = ImageLoader.loadImage("/TryAgainButton.png");
-        theBoss = ImageLoader.loadImage("/TheBoss.png");
+        asteroid = ImageLoader.loadImage("/asteroids/Brown.png");
+        asteroidOne = ImageLoader.loadImage("/asteroids/Grey_1.png");
+        asteroidGreen = ImageLoader.loadImage("/asteroids/Green.png");
+        blackhole = ImageLoader.loadImage("/asteroids/blackhole.png");
+        back = ImageLoader.loadImage("/buttons/BackButton.png");
+        cred = ImageLoader.loadImage("/buttons/CredButton.png");
+        hard = ImageLoader.loadImage("/buttons/HardButton.png");
+        normal = ImageLoader.loadImage("/buttons/NormalButton.png");
+        play = ImageLoader.loadImage("/buttons/PlayButton.png");
+        quit = ImageLoader.loadImage("/buttons/QuitButton.png");
+        tryAgain = ImageLoader.loadImage("/buttons/TryAgainButton.png");
+        theBoss = ImageLoader.loadImage("/asteroids/TheBoss.png");
 
 
     }
