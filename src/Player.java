@@ -20,8 +20,8 @@ public class Player extends GameObject {
         x += velX;
         y += velY;
 
-        x = Game.clamp(x, 0, Game.WIDTH - 65);
-        y = Game.clamp(y, -10, Game.HEIGHT - 83);
+        x = Game.clamp(x, 0, Game.WIDTH - 55);
+        y = Game.clamp(y, -10, Game.HEIGHT - 75);
 
         collision();
     }
@@ -44,7 +44,7 @@ public class Player extends GameObject {
     }
 
     public void render(Graphics g) {
-        g.drawImage(Assets.player, (int)x, (int)y, 64, 64, null);
+        g.drawImage(Assets.player, (int)x, (int)y, 55, 55, null);
     }
 
 

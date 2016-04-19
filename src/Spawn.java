@@ -64,7 +64,7 @@ public class Spawn {
                 } else if (hud.getLevel() == 20) {
                     handler.clearEnemys();
                     handler.addObject(new BossEnemy((Game.WIDTH / 2) - 300, -170, ID.BossEnemy, handler));
-                    handler.addObject(new BossEnemy((Game.WIDTH / 2) + 200, -170, ID.BossEnemy, handler));
+                    handler.addObject(new BossEnemy((Game.WIDTH / 2) + 100, -170, ID.BossEnemy, handler));
                 } else if (hud.getLevel() == 24) {
                     handler.clearEnemys();
                     handler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.SmartEnemy, handler));

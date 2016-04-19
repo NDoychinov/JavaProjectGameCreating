@@ -84,7 +84,7 @@ public class Game extends Canvas implements Runnable {
             lastTime = now;
 
             try {
-                thread.sleep(2);
+                thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -143,8 +143,10 @@ public class Game extends Canvas implements Runnable {
         handler.render(g);
 
         if (paused) {
-            g.setColor(Color.white);
-            g.drawString("PAUSED", 100, 100);
+            Font fnt = new Font("arial", 1, 50);
+            g.setColor(Color.red);
+            g.setFont(fnt);
+            g.drawString("PAUSED", 220, 150);
         }
 
         if (gameState == STATE.Game) {

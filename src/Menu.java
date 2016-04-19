@@ -84,6 +84,7 @@ public class Menu extends MouseAdapter {
         if (game.gameState == Game.STATE.End) {
             if (mouseOver(mx, my, 210, 350, 200, 64)) {
                 game.gameState = Game.STATE.Menu;
+                AudioPlayer.getSound("menu_sound").play();
                 hud.setLevel(1);
                 hud.setScore(0);
             }
@@ -113,8 +114,6 @@ public class Menu extends MouseAdapter {
 
     public void render(Graphics g) {
         if (game.gameState == Game.STATE.Menu) {
-            Font fnt = new Font("arial", 1, 50);
-            Font fnt2 = new Font("arial", 1, 30);
 
             g.drawImage(Assets.logo, 120, -90, 380, 280, null);
 
