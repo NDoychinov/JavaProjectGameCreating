@@ -90,6 +90,38 @@ public class Menu extends MouseAdapter {
             }
         }
 
+        if (game.gameState == Game.STATE.Game) {
+
+            if (mouseOver(mx, my, 520, 20, 64, 64)) {
+                if (!Game.paused) {
+                    Game.paused = true;
+                    AudioPlayer.getSound("menu_sound").play();
+                }
+            }
+
+            if (mouseOver(mx, my, 255, 145, 140, 55) && Game.paused) {
+                Game.paused = false;
+                AudioPlayer.getSound("menu_sound").play();
+            }
+
+            if (mouseOver(mx, my, 255, 222, 140, 55) && Game.paused) {
+                Game.gameState = Game.STATE.End;
+                handler.clearEnemys();
+                Game.gameState = Game.STATE.Menu;
+
+                AudioPlayer.getSound("menu_sound").play();
+
+                Game.paused = false;
+                for (int i = 0; i < 10; i++) {
+                    handler.addObject(new MenuParticle(r.nextInt(590), r.nextInt(420), ID.MenuParticle, handler));
+                }
+            }
+
+            if (mouseOver(mx, my, 255, 300, 140, 55) && Game.paused) {
+                System.exit(1);
+            }
+        }
+
     }
 
     public void mouseReleased(MouseEvent e) {

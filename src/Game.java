@@ -50,7 +50,7 @@ public class Game extends Canvas implements Runnable {
             handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
         } else {
             for (int i = 0; i < 10; i++) {
-                handler.addObject(new MenuParticle(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.MenuParticle, handler));
+                handler.addObject(new MenuParticle(r.nextInt(WIDTH - 50), r.nextInt(HEIGHT - 50), ID.MenuParticle, handler));
             }
         }
     }
@@ -120,7 +120,7 @@ public class Game extends Canvas implements Runnable {
                     gameState = STATE.End;
                     handler.clearEnemys();
                     for (int i = 0; i < 10; i++) {
-                        handler.addObject(new MenuParticle(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.MenuParticle, handler));
+                        handler.addObject(new MenuParticle(r.nextInt(WIDTH - 50), r.nextInt(HEIGHT - 50), ID.MenuParticle, handler));
                     }
                 }
             }
@@ -142,15 +142,14 @@ public class Game extends Canvas implements Runnable {
 
         handler.render(g);
 
-        if (paused) {
-            Font fnt = new Font("arial", 1, 50);
-            g.setColor(Color.red);
-            g.setFont(fnt);
-            g.drawString("PAUSED", 220, 150);
-        }
 
         if (gameState == STATE.Game) {
             hud.render(g);
+            if (!paused) {
+                g.drawImage(Assets.pauseButton, 530, 20, 64, 64, null);
+            }else{
+                g.drawImage(Assets.gameMenu, 200, 100, 250, 300, null);
+            }
         } else if (gameState == STATE.Menu || gameState == STATE.Credentials || gameState == STATE.End || gameState == STATE.Select) {
             menu.render(g);
         }

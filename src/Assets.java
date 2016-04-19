@@ -17,6 +17,8 @@ public class Assets {
     public static BufferedImage play;
     public static BufferedImage theBoss;
     public static BufferedImage asteroidGreen;
+    public static BufferedImage pauseButton;
+    public static BufferedImage gameMenu;
 
     public static void init() {
         background = ImageLoader.loadImage("/background.jpg");
@@ -34,7 +36,8 @@ public class Assets {
         quit = ImageLoader.loadImage("/buttons/QuitButton.png");
         tryAgain = ImageLoader.loadImage("/buttons/TryAgainButton.png");
         theBoss = ImageLoader.loadImage("/asteroids/TheBoss.png");
-
+        pauseButton = ImageLoader.loadImage("/buttons/PauseButton.png");
+        gameMenu = ImageLoader.loadImage("/GameMenu.png");
 
     }
 
