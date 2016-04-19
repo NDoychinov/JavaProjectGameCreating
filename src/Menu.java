@@ -108,8 +108,11 @@ public class Menu extends MouseAdapter {
                 Game.gameState = Game.STATE.End;
                 handler.clearEnemys();
                 Game.gameState = Game.STATE.Menu;
-
+                HUD.HEALTH = 100;
+                hud.setLevel(1);
+                hud.setScore(0);
                 AudioPlayer.getSound("menu_sound").play();
+
 
                 Game.paused = false;
                 for (int i = 0; i < 10; i++) {

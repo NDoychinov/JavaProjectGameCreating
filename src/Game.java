@@ -50,7 +50,7 @@ public class Game extends Canvas implements Runnable {
             handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
         } else {
             for (int i = 0; i < 10; i++) {
-                handler.addObject(new MenuParticle(r.nextInt(WIDTH - 50), r.nextInt(HEIGHT - 50), ID.MenuParticle, handler));
+                handler.addObject(new MenuParticle(r.nextInt(WIDTH - 70), r.nextInt(HEIGHT - 70), ID.MenuParticle, handler));
             }
         }
     }
@@ -120,7 +120,7 @@ public class Game extends Canvas implements Runnable {
                     gameState = STATE.End;
                     handler.clearEnemys();
                     for (int i = 0; i < 10; i++) {
-                        handler.addObject(new MenuParticle(r.nextInt(WIDTH - 50), r.nextInt(HEIGHT - 50), ID.MenuParticle, handler));
+                        handler.addObject(new MenuParticle(r.nextInt(WIDTH - 70), r.nextInt(HEIGHT - 70), ID.MenuParticle, handler));
                     }
                 }
             }
