@@ -49,6 +49,7 @@ public class Menu extends MouseAdapter {
                 handler.clearEnemys();
                 handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.BasicEnemy, handler));
                 AudioPlayer.getSound("menu_sound").play();
+                AudioPlayer.getMusic("game_background_music").play();
                 game.diff = 0;
             }
 
@@ -59,7 +60,7 @@ public class Menu extends MouseAdapter {
                 handler.clearEnemys();
                 handler.addObject(new FastEnemy(r.nextInt(Game.WIDTH - 50), r.nextInt(Game.HEIGHT - 50), ID.FastEnemy, handler));
                 AudioPlayer.getSound("menu_sound").play();
-
+                AudioPlayer.getMusic("game_background_music").play();
                 game.diff = 1;
             }
 
@@ -96,12 +97,14 @@ public class Menu extends MouseAdapter {
                 if (!Game.paused) {
                     Game.paused = true;
                     AudioPlayer.getSound("menu_sound").play();
+                    AudioPlayer.getMusic("game_background_music").pause();
                 }
             }
 
             if (mouseOver(mx, my, 255, 145, 140, 55) && Game.paused) {
                 Game.paused = false;
                 AudioPlayer.getSound("menu_sound").play();
+                AudioPlayer.getMusic("game_background_music").resume();
             }
 
             if (mouseOver(mx, my, 255, 222, 140, 55) && Game.paused) {

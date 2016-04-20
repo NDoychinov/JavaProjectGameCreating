@@ -14,6 +14,7 @@ public class AudioPlayer {
         try {
             soundMap.put("menu_sound", new Sound("resources/sounds/Menu_Click.ogg"));
             musicMap.put("game_over_sound", new Music("resources/sounds/Game_Over.ogg"));
+            musicMap.put("game_background_music", new Music("resources/sounds/background_music.ogg"));
 
 
         } catch (SlickException e) {
