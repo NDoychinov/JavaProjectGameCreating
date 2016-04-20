@@ -183,7 +183,6 @@ public class Menu extends MouseAdapter {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);
             Font fnt3 = new Font("arial", 1, 20);
-
             g.setFont(fnt);
             g.setColor(Color.white);
             g.drawString("Game Over", 180, 70);
@@ -192,7 +191,6 @@ public class Menu extends MouseAdapter {
             g.drawString("You lost with a score of: " + hud.getScore(), 175, 200);
 
             g.drawImage(Assets.tryAgain, 210, 350, 200, 64, null);
-
         } else if (game.gameState == Game.STATE.Select) {
             Font fnt = new Font("arial", 1, 50);
             Font fnt2 = new Font("arial", 1, 30);

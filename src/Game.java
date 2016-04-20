@@ -118,6 +118,7 @@ public class Game extends Canvas implements Runnable {
                     HUD.HEALTH = 100;
 
                     gameState = STATE.End;
+                    AudioPlayer.getMusic("game_over_sound").play();
                     handler.clearEnemys();
                     for (int i = 0; i < 10; i++) {
                         handler.addObject(new MenuParticle(r.nextInt(WIDTH - 70), r.nextInt(HEIGHT - 70), ID.MenuParticle, handler));

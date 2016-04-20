@@ -1,9 +1,9 @@
-import java.util.HashMap;
-import java.util.Map;
-
 import org.newdawn.slick.Music;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.Sound;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class AudioPlayer {
 
@@ -13,6 +13,7 @@ public class AudioPlayer {
     public static void init(){
         try {
             soundMap.put("menu_sound", new Sound("resources/sounds/Menu_Click.ogg"));
+            musicMap.put("game_over_sound", new Music("resources/sounds/Game_Over.ogg"));
 
 
         } catch (SlickException e) {
