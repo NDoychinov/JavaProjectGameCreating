@@ -32,11 +32,13 @@ public class Player extends GameObject {
 
             if (tempObject.getId() == ID.BasicEnemy || tempObject.getId() == ID.FastEnemy || tempObject.getId() == ID.SmartEnemy) {
                 if (getBounds().intersects(tempObject.getBounds())) {
+                    AudioPlayer.getSound("collision_sound").play(1.1f, 0.2f);
                     HUD.HEALTH -= 2;
                 }
             }
             if (tempObject.getId() == ID.BossEnemy) {
                 if (getBounds().intersects(tempObject.getBounds())) {
+                    AudioPlayer.getSound("collision_sound").play(1.1f, 0.2f);
                     HUD.HEALTH = 0;
                 }
             }

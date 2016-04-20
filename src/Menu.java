@@ -107,6 +107,13 @@ public class Menu extends MouseAdapter {
                 AudioPlayer.getMusic("game_background_music").resume();
             }
 
+            if (mouseOver(mx, my, 460, 20, 42, 42)) {
+                if (!Game.paused) {
+
+                    AudioPlayer.getMusic("game_background_music").pause();
+                }
+            }
+
             if (mouseOver(mx, my, 255, 222, 140, 55) && Game.paused) {
                 Game.gameState = Game.STATE.End;
                 handler.clearEnemys();
