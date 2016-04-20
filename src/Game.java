@@ -72,6 +72,7 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void run() {
+        AudioPlayer.getMusic("start_music").play();
         this.requestFocus();
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;

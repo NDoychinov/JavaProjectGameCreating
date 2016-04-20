@@ -15,6 +15,7 @@ public class AudioPlayer {
             soundMap.put("menu_sound", new Sound("resources/sounds/Menu_Click.ogg"));
             soundMap.put("collision_sound", new Sound("resources/sounds/Collision_Sound.ogg"));
             musicMap.put("game_over_sound", new Music("resources/sounds/Game_Over.ogg"));
+            musicMap.put("start_music", new Music("resources/sounds/Start_Music.ogg"));
             musicMap.put("game_background_music", new Music("resources/sounds/background_music.ogg"));
             musicMap.put("boss_music", new Music("resources/sounds/Boss_Music.ogg"));
 

@@ -134,6 +134,7 @@ public class Menu extends MouseAdapter {
                 mute = false;
 
                 Game.paused = false;
+                AudioPlayer.getMusic("start_music").play();
                 for (int i = 0; i < 10; i++) {
                     handler.addObject(new MenuParticle(r.nextInt(590), r.nextInt(420), ID.MenuParticle, handler));
                 }
