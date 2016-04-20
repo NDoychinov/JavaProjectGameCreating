@@ -148,12 +148,12 @@ public class Game extends Canvas implements Runnable {
         if (gameState == STATE.Game) {
             hud.render(g);
             if (!paused) {
-                g.drawImage(Assets.pauseButton, 530, 20, 64, 64, null);
+                g.drawImage(Assets.pauseButton, 590, 15, 32, 32, null);
 
                 if (Menu.mute == false) {
-                    g.drawImage(Assets.unmute, 460, 20, 42, 42, null);
+                    g.drawImage(Assets.unmute, 540, 10, 42, 42, null);
                 }else {
-                    g.drawImage(Assets.mute, 460, 20, 42, 42, null);
+                    g.drawImage(Assets.mute, 547, 17, 28, 28, null);
                 }
 
             }else{
