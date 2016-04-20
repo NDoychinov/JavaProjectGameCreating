@@ -4,6 +4,9 @@
     <root id="archive" name="JavaGame.jar">
       <element id="module-output" name="JavaGame" />
       <element id="library" level="project" name="resources" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
+      </element>
     </root>
   </artifact>
 </component>

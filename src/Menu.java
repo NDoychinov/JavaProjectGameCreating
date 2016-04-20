@@ -10,6 +10,8 @@ public class Menu extends MouseAdapter {
     private HUD hud;
     private Random r = new Random();
 
+    public static boolean mute = false;
+
     public Menu(Game game, Handler handler, HUD hud) {
         this.game = game;
         this.hud = hud;
@@ -92,7 +94,7 @@ public class Menu extends MouseAdapter {
         }
 
         if (game.gameState == Game.STATE.Game) {
-
+            //Pause button
             if (mouseOver(mx, my, 520, 20, 64, 64)) {
                 if (!Game.paused) {
                     Game.paused = true;
@@ -100,17 +102,24 @@ public class Menu extends MouseAdapter {
                     AudioPlayer.getMusic("game_background_music").pause();
                 }
             }
+            //Volume button
+            if (mouseOver(mx, my, 460, 20, 42, 42)) {
+                if (!Game.paused) {
+                    if (!mute) {
+                        mute = true;
+                        AudioPlayer.getMusic("game_background_music").pause();
+                    } else {
+                        mute = false;
+                        AudioPlayer.getMusic("game_background_music").resume();
+                    }
+                }
+            }
 
             if (mouseOver(mx, my, 255, 145, 140, 55) && Game.paused) {
                 Game.paused = false;
                 AudioPlayer.getSound("menu_sound").play();
-                AudioPlayer.getMusic("game_background_music").resume();
-            }
-
-            if (mouseOver(mx, my, 460, 20, 42, 42)) {
-                if (!Game.paused) {
-
-                    AudioPlayer.getMusic("game_background_music").pause();
+                if (!mute) {
+                    AudioPlayer.getMusic("game_background_music").resume();
                 }
             }
 
@@ -122,7 +131,7 @@ public class Menu extends MouseAdapter {
                 hud.setLevel(1);
                 hud.setScore(0);
                 AudioPlayer.getSound("menu_sound").play();
-
+                mute = false;
 
                 Game.paused = false;
                 for (int i = 0; i < 10; i++) {
