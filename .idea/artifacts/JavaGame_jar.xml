@@ -3,6 +3,13 @@
     <output-path>$PROJECT_DIR$/out/artifacts/JavaGame_jar</output-path>
     <root id="archive" name="JavaGame.jar">
       <element id="module-output" name="JavaGame" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/slick.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jorbis-0.0.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jogg-0.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jinput.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/resources" />
+      <element id="library" level="project" name="libs2" />
       <element id="library" level="project" name="resources" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />

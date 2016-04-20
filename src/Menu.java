@@ -95,7 +95,7 @@ public class Menu extends MouseAdapter {
 
         if (game.gameState == Game.STATE.Game) {
             //Pause button
-            if (mouseOver(mx, my, 520, 20, 64, 64)) {
+            if (mouseOver(mx, my, 590, 15, 32, 32)) {
                 if (!Game.paused) {
                     Game.paused = true;
                     AudioPlayer.getSound("menu_sound").play();
@@ -103,7 +103,7 @@ public class Menu extends MouseAdapter {
                 }
             }
             //Volume button
-            if (mouseOver(mx, my, 460, 20, 42, 42)) {
+            if (mouseOver(mx, my, 540, 10, 42, 42)) {
                 if (!Game.paused) {
                     if (!mute) {
                         mute = true;
