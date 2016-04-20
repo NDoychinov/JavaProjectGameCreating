@@ -169,29 +169,20 @@ public class Menu extends MouseAdapter {
             g.drawImage(Assets.back, 210, 350, 200, 64, null);
 
         } else if (game.gameState == Game.STATE.End) {
-            Font fnt = new Font("arial", 1, 50);
-            Font fnt2 = new Font("arial", 1, 30);
-            Font fnt3 = new Font("arial", 1, 20);
-            g.setFont(fnt);
-            g.setColor(Color.white);
-            g.drawString("Game Over", 180, 70);
+            Font fnt = new Font("Consolas", 1, 23);
 
-            g.setFont(fnt3);
-            g.drawString("You lost with a score of: " + hud.getScore(), 175, 200);
+            g.drawImage(Assets.gameOver, 170, 50, 300, 70, null);
+
+            g.setColor(Color.black);
+            g.setFont(fnt);
+            g.drawString("You lost with a score of: " + hud.getScore(), 110, 230);
 
             g.drawImage(Assets.tryAgain, 210, 350, 200, 64, null);
         } else if (game.gameState == Game.STATE.Select) {
-            Font fnt = new Font("arial", 1, 50);
-            Font fnt2 = new Font("arial", 1, 30);
-
-            g.setFont(fnt);
-            g.setColor(Color.white);
-            g.drawString("SELECT DIFFICULTY", 75, 70);
+            g.drawImage(Assets.select, 110, 35, 420, 70, null);
 
             g.drawImage(Assets.normal, 210, 150, 200, 64, null);
-
             g.drawImage(Assets.hard, 210, 250, 200, 64, null);
-
             g.drawImage(Assets.back, 210, 350, 200, 64, null);
         }
     }

@@ -24,6 +24,8 @@ public class Assets {
     public static BufferedImage nikolay;
     public static BufferedImage stoqn;
     public static BufferedImage todor;
+    public static BufferedImage gameOver;
+    public static BufferedImage select;
 
     public static void init() {
         background = ImageLoader.loadImage("/background.jpg");
@@ -48,8 +50,8 @@ public class Assets {
         nikolay = ImageLoader.loadImage("/credentials/nikolay.png");
         stoqn = ImageLoader.loadImage("/credentials/stoqn.png");
         todor = ImageLoader.loadImage("/credentials/todor.png");
-
-
+        gameOver = ImageLoader.loadImage("/gameOver.png");
+        select = ImageLoader.loadImage("/select.png");
     }
 
 }
