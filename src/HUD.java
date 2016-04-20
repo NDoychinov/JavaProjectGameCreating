@@ -27,8 +27,8 @@ public class HUD {
         Font fnt = new Font("arial", 1, 15);
         g.setColor(Color.white);
         g.setFont(fnt);
-        g.drawString("Score: " + score, 20, 64);
-        g.drawString("Level: " + level, 20, 80);
+        g.drawString("Score: " + score, 15, 65);
+        g.drawString("Level: " + level, 15, 85);
     }
 
     public void setScore(int score){
