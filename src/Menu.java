@@ -108,7 +108,7 @@ public class Menu extends MouseAdapter {
                     if (hud.getLevel() % 10 == 0) {
                         if (!mute) {
                             mute = true;
-                            AudioPlayer.getMusic("boss_music").pause();
+                            AudioPlayer.getMusic("boss_music").stop();
 
                         } else {
                             mute = false;
