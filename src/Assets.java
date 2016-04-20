@@ -26,6 +26,9 @@ public class Assets {
     public static BufferedImage todor;
     public static BufferedImage gameOver;
     public static BufferedImage select;
+    public static BufferedImage mute;
+    public static BufferedImage unmute;
+
 
     public static void init() {
         background = ImageLoader.loadImage("/background.jpg");
@@ -52,6 +55,8 @@ public class Assets {
         todor = ImageLoader.loadImage("/credentials/todor.png");
         gameOver = ImageLoader.loadImage("/gameOver.png");
         select = ImageLoader.loadImage("/select.png");
+        mute = ImageLoader.loadImage("/buttons/mute.png");
+        unmute = ImageLoader.loadImage("/buttons/unmute.png");
     }
 
 }
