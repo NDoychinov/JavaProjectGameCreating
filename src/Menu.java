@@ -105,12 +105,23 @@ public class Menu extends MouseAdapter {
             //Volume button
             if (mouseOver(mx, my, 540, 10, 42, 42)) {
                 if (!Game.paused) {
-                    if (!mute) {
-                        mute = true;
-                        AudioPlayer.getMusic("game_background_music").pause();
+                    if (hud.getLevel() % 10 == 0) {
+                        if (!mute) {
+                            mute = true;
+                            AudioPlayer.getMusic("boss_music").pause();
+
+                        } else {
+                            mute = false;
+                            AudioPlayer.getMusic("boss_music").play();
+                        }
                     } else {
-                        mute = false;
-                        AudioPlayer.getMusic("game_background_music").resume();
+                        if (!mute) {
+                            mute = true;
+                            AudioPlayer.getMusic("game_background_music").pause();
+                        } else {
+                            mute = false;
+                            AudioPlayer.getMusic("game_background_music").resume();
+                        }
                     }
                 }
             }
@@ -179,7 +190,7 @@ public class Menu extends MouseAdapter {
             g.drawImage(Assets.quit, 210, 350, 200, 64, null);
 
         } else if (game.gameState == Game.STATE.Credentials) {
-            g.drawImage(Assets.team,110, 20, 420, 70, null);
+            g.drawImage(Assets.team, 110, 20, 420, 70, null);
 
             g.drawImage(Assets.krum, 185, 100, 260, 50, null);
             g.drawImage(Assets.nikolay, 185, 160, 260, 50, null);
